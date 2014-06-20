@@ -6,11 +6,11 @@ output:
 Motor Trends : Automatic or Manual transmission for better mileage ?
 ========================================================
     
-**by P. Paquay**
+**by Jeevanandam**
     
 ## Executive summary
     
-In this report we try to answer the question : "Is automatic or manual transmission better for mpg ?". To answer this question we used a dataset from the 1974 Motor Trend US magazine, and ran some statistical tests and a regression analysis. On one hand the statistical tests show (without controlling for other car design features) a difference in mean of about 7 miles more for the manual transmitted cars. On the other hand, the regression analysis indicate that by taking into account other variables like horse power and weight, manual transmitted cars are only 1.8 miles better than automatic transmitted cars and also that this result is not significant. So to get a better mileage it's probably better to consider cars of a certain weight and horse power than to consider manual or automatic transmission.
+In this report I try to answer the question : "Is automatic or manual transmission better for mpg ?". To answer this question we used a dataset from the 1974 Motor Trend US magazine, and ran some statistical tests and a regression analysis. On one hand the statistical tests show (without controlling for other car design features) a difference in mean of about 7 miles more for the manual transmitted cars. On the other hand, the regression analysis indicate that by taking into account other variables like horse power and weight, manual transmitted cars are only 1.8 miles better than automatic transmitted cars and also that this result is not significant. So to get a better mileage it's probably better to consider cars of a certain weight and horse power than to consider manual or automatic transmission.
 
 ## Cleaning data
 
@@ -21,7 +21,7 @@ data(mtcars)
 str(mtcars)
 ```
 
-Now we coerce the "cyl", "vs", "gear", "carb" and "am" variables into factor variables.
+Now I coerce the "cyl", "vs", "gear", "carb" and "am" variables into factor variables.
 
 ```{r}
 mtcars$cyl <- factor(mtcars$cyl)
